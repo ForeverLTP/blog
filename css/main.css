@@ -1849,7 +1849,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #386fc8;
+  background: #ffd275;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2952,6 +2952,14 @@ ul.breadcrumb li+li:last-child {
     text-align: justify;
   }
 }
-body {
-  background: url("/images/bg2.jpg");
+@media screen and (min-width: 1200px) {
+  body {
+    background-image: url("/images/bg3.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+  }
+  #footer a {
+    color: #eee;
+  }
 }
