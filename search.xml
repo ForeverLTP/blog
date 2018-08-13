@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[Hello World]]></title>
-    <url>%2Fblog%2F2018%2F08%2F13%2Fhello-world%2F</url>
-    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
-  </entry>
-  <entry>
     <title><![CDATA[源起]]></title>
     <url>%2Fblog%2F2018%2F08%2F13%2F%E6%BA%90%E8%B5%B7%2F</url>
     <content type="text"><![CDATA[&emsp;&emsp;算算已经工作了半年了，经常会有一些问题需要去思考，有时候我知道它的意思，但是就是表达不出来，总感觉缺少些什么，这种朦胧懵懂的感觉很不好（这也是我不太会说的一个原因），所以我就想记录，在记录或者说整合的时候你会遇到其他各种各样的问题，这或许就是我缺少的那部分东西，所以我想要去探寻我那部分缺失的东西。&emsp;&emsp;哈哈，想拥有一个自己的博客很久，但是老是觉得自己技术不太行、没什么可写的而放弃。现在想开了，作为一个年轻人就是要敢于做，至少不会后悔，就像我首页说的那样JUST DO IT,做就完事了。&emsp;&emsp;搭建这个博客和首页样式的制作花费了我二天的时间，虽然网上有教程，但是当你自己去做的时候你会发现其实并不想教程中说的那么简单，即使完全按照他们的步骤来，因为种种原因，也会出错，也会有问题，这时候就要你自己来解决或百度解决，也许当时你会烦恼，但是当你都解决了的时候你会很高兴，那种无法形容的高兴，这就是问题它的魅力所在，同样也是我想要的感觉。&emsp;&emsp;说了这么多废话，总而言之，今天我的博客诞生了。最后，借我老师的一句话结尾，坐在台下你永远无法体会站在台上的压力。]]></content>
