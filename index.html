@@ -97,7 +97,7 @@
     root: '/blog/',
     scheme: 'Pisces',
     version: '6.4.0',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":true,"onmobile":false},
+    sidebar: {"position":"left","display":"hide","offset":12,"b2t":false,"scrollpercent":true,"onmobile":false},
     fancybox: false,
     fastclick: false,
     lazyload: false,
@@ -336,6 +336,174 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://ForeverLTP.github.io/blog/blog/2018/08/15/浅析ConcurrentModificationException异常的原因/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="一只咸鱼">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/blog/images/tx.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="一只咸鱼">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/blog/2018/08/15/浅析ConcurrentModificationException异常的原因/" itemprop="url">
+                  浅析ConcurrentModificationException异常的原因
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2018-08-15 22:25:58 / 修改时间：22:28:39" itemprop="dateCreated datePublished" datetime="2018-08-15T22:25:58+08:00">2018-08-15</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/blog/categories/BUG/" itemprop="url" rel="index"><span itemprop="name">BUG</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          &nbsp;&nbsp;在分析前我们先做几个测试
+public class TestList {
+
+    public static void main(String[]args){
+      List&lt;String&gt; list = new ArrayList&lt;String&g
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/blog/2018/08/15/浅析ConcurrentModificationException异常的原因/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://ForeverLTP.github.io/blog/blog/2018/08/14/hexo-github快速高效搭建一个自定义页面作为首页的博客/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -382,12 +550,24 @@
                 
               
 
-              <time title="创建时间：2018-08-14 22:25:59 / 修改时间：23:21:42" itemprop="dateCreated datePublished" datetime="2018-08-14T22:25:59+08:00">2018-08-14</time>
+              <time title="创建时间：2018-08-14 22:25:59" itemprop="dateCreated datePublished" datetime="2018-08-14T22:25:59+08:00">2018-08-14</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-08-15 22:28:43" itemprop="dateModified" datetime="2018-08-15T22:28:43+08:00">2018-08-15</time>
               
             
           </span>
@@ -404,7 +584,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/blog/categories/hexo教程/" itemprop="url" rel="index"><span itemprop="name">hexo教程</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/blog/categories/教程/" itemprop="url" rel="index"><span itemprop="name">教程</span></a></span>
 
                 
                 
@@ -679,7 +859,7 @@
                 
                   <a href="/blog/archives/">
                 
-                    <span class="site-state-item-count">2</span>
+                    <span class="site-state-item-count">3</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -694,7 +874,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">1</span>
+                      
+                    
+                    <span class="site-state-item-count">2</span>
                     <span class="site-state-item-name">分类</span>
                   </a>
                 </div>
@@ -715,7 +897,13 @@
                     
                       
                     
-                    <span class="site-state-item-count">4</span>
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">7</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
@@ -783,11 +971,7 @@
 
 
 
-  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动 v3.7.1</div>
 
-
-
-  <span class="post-meta-divider">|</span>
 
 
 
@@ -797,6 +981,24 @@
 
 
         
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv" title="总访客量">
+      <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+    </span>
+  
+
+  
+    <span class="site-pv" title="总访问量">
+      <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+    </span>
+  
+</div>
+
 
 
 
