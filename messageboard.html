@@ -35,6 +35,7 @@
 
 
 
+
 <script src="https://cdn.bootcss.com/jquery/1.10.2/jquery.min.js">
 <script src="https://cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
 <link
@@ -463,16 +464,19 @@
 							<img alt="" src="/blog/images/qq/75.gif"/>
 							</div>
 						</div>
-
+						<div id="hwsData" style="behavior:url(#default#savehistory)"></div>
 
 						<!-- 结束 -->
 
 						<script type="text/javascript">
 							$(function() {
 								//获取留言数据
-								htmlobj=$.ajax({url:"/blog/txt/messageboard.txt",async:false});
-								$("#MessageBoard").append(htmlobj.responseText);
-							
+								//htmlobj=$.ajax({url:"/blog/txt/messageboard.txt",async:false});
+								//$("#MessageBoard").append(htmlobj.responseText);
+								//var cached = $("#hwsData").html();
+								//alert(cached);
+								//$("#MessageBoard").html(cached);
+								 //$("#MessageBoard").load("test.html");
 								$(".input-group-btn").on("click","#qq",function(){
 									$("#qqFace").css("display","block");
 								});
@@ -488,12 +492,11 @@
 										function() {
 											var value = $("#hwsMessage").html();
 											if (value != null) {
-																						
-												$("#MessageBoard").append(
-														getNowFormatDate()+"&nbsp;&nbsp;"+"<label style=\"border-radius: 5px;background-color:#00F5FF;\">游客</label>："+value
-													+ "<br/>");
+												var massage = getNowFormatDate()+"&nbsp;&nbsp;"+"<label style=\"border-radius: 5px;background-color:#00F5FF;\">游客</label>："+value
+													+ "<br/>";										
+												$("#MessageBoard").append(massage);
+												//$("#hwsData").append(massage);
 												
-												//htmlobj.write("1112")
 												$("#hwsMessage").html("");
 											}
 
