@@ -1852,7 +1852,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #fff;
+  background: #ff2f93;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2658,6 +2658,9 @@ embed {
 .menu-item a:hover {
   color: #1c86ee;
   border-bottom: none;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 3px 3px 3px #e6e6fa, 3px -3px 3px #e6e6fa, -3px 3px 3px #e6e6fa, -3px -3px 3px #e6e6fa;
 }
 .copyright {
   color: #fff;
@@ -2668,6 +2671,25 @@ embed {
 .busuanzi-count {
   color: #fff;
 }
-.header-inner {
+.post-block.page {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 3px 3px 3px #e6e6fa, 3px -3px 3px #e6e6fa, -3px 3px 3px #e6e6fa, -3px -3px 3px #e6e6fa;
+}
+.category-all-page {
   margin-top: -50px;
+}
+.category-all {
+  margin-left: 40px;
+}
+.tag-cloud {
+  margin-top: -50px;
+}
+.post-block.archive {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 3px 3px 3px #e6e6fa, 3px -3px 3px #e6e6fa, -3px 3px 3px #e6e6fa, -3px -3px 3px #e6e6fa;
+}
+.post-block.archive .post.post-type-normal {
+  background-color: #fff;
 }
