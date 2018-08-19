@@ -22,7 +22,7 @@
 <meta name="viewport"
 	content="width=device-width, initial-scale=1, maximum-scale=2" />
 <meta name="theme-color" content="#222">
-
+<meta name="save" content="history">
 
 
 
@@ -464,15 +464,15 @@
 							<img alt="" src="/blog/images/qq/75.gif"/>
 							</div>
 						</div>
-						<div id="hwsData" style="behavior:url(#default#savehistory)"></div>
+						
 
 						<!-- 结束 -->
 
 						<script type="text/javascript">
 							$(function() {
 								//获取留言数据
-								//htmlobj=$.ajax({url:"/blog/txt/messageboard.txt",async:false});
-								//$("#MessageBoard").append(htmlobj.responseText);
+								htmlobj=$.ajax({url:"/blog/txt/messageboard.txt",async:false});
+								$("#MessageBoard").append(htmlobj.responseText);
 								//var cached = $("#hwsData").html();
 								//alert(cached);
 								//$("#MessageBoard").html(cached);
@@ -493,7 +493,8 @@
 											var value = $("#hwsMessage").html();
 											if (value != null) {
 												var massage = getNowFormatDate()+"&nbsp;&nbsp;"+"<label style=\"border-radius: 5px;background-color:#00F5FF;\">游客</label>："+value
-													+ "<br/>";										
+													+ "<br/>";	
+												//alert(massage);
 												$("#MessageBoard").append(massage);
 												//$("#hwsData").append(massage);
 												
