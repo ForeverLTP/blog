@@ -5,9 +5,9 @@
   
   <link href="/blog/atom.xml" rel="self"/>
   
-  <link href="http://hwsblog.xyz/blog/"/>
+  <link href="http://www.hwsblog.xyz/blog/"/>
   <updated>2018-08-23T12:24:22.014Z</updated>
-  <id>http://hwsblog.xyz/blog/</id>
+  <id>http://www.hwsblog.xyz/blog/</id>
   
   <author>
     <name>一只咸鱼</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>对git仓库的理解</title>
-    <link href="http://hwsblog.xyz/blog/2018/08/23/%E5%AF%B9git%E4%BB%93%E5%BA%93%E7%9A%84%E7%90%86%E8%A7%A3/"/>
-    <id>http://hwsblog.xyz/blog/2018/08/23/对git仓库的理解/</id>
+    <link href="http://www.hwsblog.xyz/blog/2018/08/23/%E5%AF%B9git%E4%BB%93%E5%BA%93%E7%9A%84%E7%90%86%E8%A7%A3/"/>
+    <id>http://www.hwsblog.xyz/blog/2018/08/23/对git仓库的理解/</id>
     <published>2018-08-23T11:52:06.000Z</published>
     <updated>2018-08-23T12:24:22.014Z</updated>
     
@@ -35,23 +35,23 @@
     
     </summary>
     
-      <category term="Git" scheme="http://hwsblog.xyz/blog/categories/Git/"/>
+      <category term="Git" scheme="http://www.hwsblog.xyz/blog/categories/Git/"/>
     
     
-      <category term="本地库" scheme="http://hwsblog.xyz/blog/tags/%E6%9C%AC%E5%9C%B0%E5%BA%93/"/>
+      <category term="本地库" scheme="http://www.hwsblog.xyz/blog/tags/%E6%9C%AC%E5%9C%B0%E5%BA%93/"/>
     
-      <category term="暂存区" scheme="http://hwsblog.xyz/blog/tags/%E6%9A%82%E5%AD%98%E5%8C%BA/"/>
+      <category term="暂存区" scheme="http://www.hwsblog.xyz/blog/tags/%E6%9A%82%E5%AD%98%E5%8C%BA/"/>
     
-      <category term="工作区" scheme="http://hwsblog.xyz/blog/tags/%E5%B7%A5%E4%BD%9C%E5%8C%BA/"/>
+      <category term="工作区" scheme="http://www.hwsblog.xyz/blog/tags/%E5%B7%A5%E4%BD%9C%E5%8C%BA/"/>
     
-      <category term="解决冲突" scheme="http://hwsblog.xyz/blog/tags/%E8%A7%A3%E5%86%B3%E5%86%B2%E7%AA%81/"/>
+      <category term="解决冲突" scheme="http://www.hwsblog.xyz/blog/tags/%E8%A7%A3%E5%86%B3%E5%86%B2%E7%AA%81/"/>
     
   </entry>
   
   <entry>
     <title>浅析ConcurrentModificationException异常的原因</title>
-    <link href="http://hwsblog.xyz/blog/2018/08/15/%E6%B5%85%E6%9E%90ConcurrentModificationException%E5%BC%82%E5%B8%B8%E7%9A%84%E5%8E%9F%E5%9B%A0/"/>
-    <id>http://hwsblog.xyz/blog/2018/08/15/浅析ConcurrentModificationException异常的原因/</id>
+    <link href="http://www.hwsblog.xyz/blog/2018/08/15/%E6%B5%85%E6%9E%90ConcurrentModificationException%E5%BC%82%E5%B8%B8%E7%9A%84%E5%8E%9F%E5%9B%A0/"/>
+    <id>http://www.hwsblog.xyz/blog/2018/08/15/浅析ConcurrentModificationException异常的原因/</id>
     <published>2018-08-15T14:25:58.000Z</published>
     <updated>2018-08-17T13:32:52.186Z</updated>
     
@@ -71,21 +71,21 @@
     
     </summary>
     
-      <category term="BUG" scheme="http://hwsblog.xyz/blog/categories/BUG/"/>
+      <category term="BUG" scheme="http://www.hwsblog.xyz/blog/categories/BUG/"/>
     
     
-      <category term="异常" scheme="http://hwsblog.xyz/blog/tags/%E5%BC%82%E5%B8%B8/"/>
+      <category term="异常" scheme="http://www.hwsblog.xyz/blog/tags/%E5%BC%82%E5%B8%B8/"/>
     
-      <category term="迭代器" scheme="http://hwsblog.xyz/blog/tags/%E8%BF%AD%E4%BB%A3%E5%99%A8/"/>
+      <category term="迭代器" scheme="http://www.hwsblog.xyz/blog/tags/%E8%BF%AD%E4%BB%A3%E5%99%A8/"/>
     
-      <category term="ConcurrentModificationException" scheme="http://hwsblog.xyz/blog/tags/ConcurrentModificationException/"/>
+      <category term="ConcurrentModificationException" scheme="http://www.hwsblog.xyz/blog/tags/ConcurrentModificationException/"/>
     
   </entry>
   
   <entry>
     <title>hexo+github快速高效搭建一个自定义页面作为首页的博客</title>
-    <link href="http://hwsblog.xyz/blog/2018/08/14/hexo-github%E5%BF%AB%E9%80%9F%E9%AB%98%E6%95%88%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AA%E8%87%AA%E5%AE%9A%E4%B9%89%E9%A1%B5%E9%9D%A2%E4%BD%9C%E4%B8%BA%E9%A6%96%E9%A1%B5%E7%9A%84%E5%8D%9A%E5%AE%A2/"/>
-    <id>http://hwsblog.xyz/blog/2018/08/14/hexo-github快速高效搭建一个自定义页面作为首页的博客/</id>
+    <link href="http://www.hwsblog.xyz/blog/2018/08/14/hexo-github%E5%BF%AB%E9%80%9F%E9%AB%98%E6%95%88%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AA%E8%87%AA%E5%AE%9A%E4%B9%89%E9%A1%B5%E9%9D%A2%E4%BD%9C%E4%B8%BA%E9%A6%96%E9%A1%B5%E7%9A%84%E5%8D%9A%E5%AE%A2/"/>
+    <id>http://www.hwsblog.xyz/blog/2018/08/14/hexo-github快速高效搭建一个自定义页面作为首页的博客/</id>
     <published>2018-08-14T14:25:59.000Z</published>
     <updated>2018-08-17T15:11:46.066Z</updated>
     
@@ -101,23 +101,23 @@
     
     </summary>
     
-      <category term="教程" scheme="http://hwsblog.xyz/blog/categories/%E6%95%99%E7%A8%8B/"/>
+      <category term="教程" scheme="http://www.hwsblog.xyz/blog/categories/%E6%95%99%E7%A8%8B/"/>
     
     
-      <category term="hexo" scheme="http://hwsblog.xyz/blog/tags/hexo/"/>
+      <category term="hexo" scheme="http://www.hwsblog.xyz/blog/tags/hexo/"/>
     
-      <category term="github" scheme="http://hwsblog.xyz/blog/tags/github/"/>
+      <category term="github" scheme="http://www.hwsblog.xyz/blog/tags/github/"/>
     
-      <category term="自定义" scheme="http://hwsblog.xyz/blog/tags/%E8%87%AA%E5%AE%9A%E4%B9%89/"/>
+      <category term="自定义" scheme="http://www.hwsblog.xyz/blog/tags/%E8%87%AA%E5%AE%9A%E4%B9%89/"/>
     
-      <category term="博客" scheme="http://hwsblog.xyz/blog/tags/%E5%8D%9A%E5%AE%A2/"/>
+      <category term="博客" scheme="http://www.hwsblog.xyz/blog/tags/%E5%8D%9A%E5%AE%A2/"/>
     
   </entry>
   
   <entry>
     <title>源起</title>
-    <link href="http://hwsblog.xyz/blog/2018/08/13/%E6%BA%90%E8%B5%B7/"/>
-    <id>http://hwsblog.xyz/blog/2018/08/13/源起/</id>
+    <link href="http://www.hwsblog.xyz/blog/2018/08/13/%E6%BA%90%E8%B5%B7/"/>
+    <id>http://www.hwsblog.xyz/blog/2018/08/13/源起/</id>
     <published>2018-08-13T14:39:09.000Z</published>
     <updated>2018-08-13T15:02:21.630Z</updated>
     
