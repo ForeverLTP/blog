@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[MybatisGenerator自动构建代码]]></title>
+    <url>%2Fblog%2F2018%2F09%2F04%2FMybatisGenerator%E8%87%AA%E5%8A%A8%E6%9E%84%E5%BB%BA%E4%BB%A3%E7%A0%81%2F</url>
+    <content type="text"><![CDATA[详情请点击这里]]></content>
+      <categories>
+        <category>轮子</category>
+      </categories>
+      <tags>
+        <tag>Mybatis</tag>
+        <tag>Generator</tag>
+        <tag>自动构建代码</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[对git仓库的理解]]></title>
     <url>%2Fblog%2F2018%2F08%2F23%2F%E5%AF%B9git%E4%BB%93%E5%BA%93%E7%9A%84%E7%90%86%E8%A7%A3%2F</url>
     <content type="text"><![CDATA[前言 最近也是在使用git，经常会出现一些bug很是头疼。后来发现是前期知识不扎实，没有彻底的理解git仓库的结构，只是出现bug就百度，但是百度的有时候效也没有用，这就非常的苦恼了，所以就有了这篇文章。 知识概念 如上图这就是一个git仓库，不管你是通过git bash git init初始化还是通过eclipse clone一个远程仓库都会创建这样一个目录，现在来解释一下它们的含义。 目录：git管理的一个目录也就是一个git仓库。工作区：目录下，.git文件夹以外的都是工作区。工作区的目的是存放需要git进行版本控制的文件或者文件夹。版本库：目录下的.git的文件夹就是版本库。Stage：也称为index，指的是暂存区,目的是对文件进行标记。local Repo:指的是你的本地库，所谓的提交到远程仓库就是将你本地库上的东西提交上去 本地操作 了解了这些好像也没什么用，之前我也是这么觉得，哈哈，别急，通过下面实战完成一次commit操作你就会知道它们的作用了。 首先在git仓库中的工作区创建两个文件test.txt和test1.txt,然后使用git status命令查看工作区文件的状态如下图 我们可以看到两个文件显示的是红色而且是在Untracked files中（Untracked files表示未跟踪的文件），表明此时在工作区的两个文件都没有进行到版本控制。下面通过 git add test.txt将test.txt文件添加到暂存区中，此时文件颜色变成了绿色，表示已被追踪且已暂存。 注：1、未添加的文件不会进行版本控制。2、已经追踪的文件修改后也会变成红色，此时需要重新添加到暂存区 此时通过git commit -m “提交”命令将暂存区的文件提交到你的本地库中，以上所有操作都是在本地完成不牵扯远程仓库。 知识点：1、清除本次修改内容（在提交到暂存区之前）：git checkout – filename2、从暂存区中清除：git reset HEAD filename(如果此文件此前已经提交过到本地库，则此时该文件还是已追踪状态否则变成未追踪状态)3、取消已追踪文件的追踪：git rm –cached filename(配合commit命令会在本地库中清除该文件，工作区的文件不会删除)4、删除工作区文件:git rm filename(配合commit命令会同时删除本地库和工作区的文件) 远程仓库的操作 首先使用git remote -v查看远程仓库，然后创建一个与已有名称不同的远程仓库。git remote add ssh(https)，因为前面已经commit到本地库了，现在可以push推送到远程仓库了。使用命令：git push origin test:master意思是将本地库中test分支的东西提交到远程仓库origin的master分支上，也可以简写为 git push origin master,意思是将当前分支提交到远程仓库origin的master分支上，同样也可以简写为git push 但是这个要指定默认仓库即第一次提交的时候使用参数-u。 冲突解决 有时候会遇到远程仓库和你本地内容不同(不是包含关系)，此时push就会产生冲突，因此就需要解决冲突。 首先需要将你本地的最新内容提交到本地库中否则无法进行merge操作。提交完成后使用命令:git fetch origin master,将远程仓库origin的master分支的数据拉下来，然后在使用命令:git merge origin/master合并一下，这时候你就会在冲突文件中看到多了一些信息。其中HEAD到======上是指你修改的下面的======到origin/master是远程仓库的内容，远程仓库的内容的和你修改的不是同一个地方就将这些HEAD等信息数据删掉然后重新add commit push就解决了，如果修改的是同一个的地方就看谁的是正确的把错误的删掉，同样add commit push 就ok了 总结 1、首先要理解git的一些相关概念，如它的工作区域等2、注意看git bash的提示信息，它的提示信息可以帮助你解决很多问题。 通过使用命令行你可以更清楚的知道它运作的原理。如果你使用命令行都能操作git那么使用eclipse操作就更容易了。 Git教程：https://git-scm.com/book/zh/v2/起步-Git-基础]]></content>

@@ -6,7 +6,7 @@
   <link href="/blog/atom.xml" rel="self"/>
   
   <link href="http://www.hwsblog.xyz/blog/"/>
-  <updated>2018-08-23T12:24:22.014Z</updated>
+  <updated>2018-09-04T12:10:54.192Z</updated>
   <id>http://www.hwsblog.xyz/blog/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>MybatisGenerator自动构建代码</title>
+    <link href="http://www.hwsblog.xyz/blog/2018/09/04/MybatisGenerator%E8%87%AA%E5%8A%A8%E6%9E%84%E5%BB%BA%E4%BB%A3%E7%A0%81/"/>
+    <id>http://www.hwsblog.xyz/blog/2018/09/04/MybatisGenerator自动构建代码/</id>
+    <published>2018-09-04T11:50:23.000Z</published>
+    <updated>2018-09-04T12:10:54.192Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://github.com/ForeverLTP/MybatisGeneration" target="_blank" rel="noopener">详情请点击这里</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;https://github.com/ForeverLTP/MybatisGeneration&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;详情请点击这里&lt;/a&gt;&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+      <category term="轮子" scheme="http://www.hwsblog.xyz/blog/categories/%E8%BD%AE%E5%AD%90/"/>
+    
+    
+      <category term="Mybatis" scheme="http://www.hwsblog.xyz/blog/tags/Mybatis/"/>
+    
+      <category term="Generator" scheme="http://www.hwsblog.xyz/blog/tags/Generator/"/>
+    
+      <category term="自动构建代码" scheme="http://www.hwsblog.xyz/blog/tags/%E8%87%AA%E5%8A%A8%E6%9E%84%E5%BB%BA%E4%BB%A3%E7%A0%81/"/>
+    
+  </entry>
   
   <entry>
     <title>对git仓库的理解</title>
