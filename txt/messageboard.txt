@@ -1,4 +1,10 @@
-﻿2018-08-19&nbsp;&nbsp;&nbsp;&nbsp;10:45&nbsp;&nbsp;<label style="border-radius: 5px;background-color:#00F5FF;">游客</label>：今天天气晴朗<img src="/blog/images/qq/54.gif"><br/>
-2018-08-19&nbsp;&nbsp;&nbsp;&nbsp;10:46&nbsp;&nbsp;<label style="border-radius: 5px;background-color:#00F5FF;">游客</label>：其实吧西红柿是真的难吃，linux是真的好用<img src="/blog/images/qq/20.gif"><br/>
-2018-08-19&nbsp;&nbsp;&nbsp;&nbsp;10:46&nbsp;&nbsp;<label style="border-radius: 5px;background-color:#00F5FF;">游客</label>：时间轴真的好听<img src="/blog/images/qq/41.gif"><br/>
-2018-08-20&nbsp;&nbsp;&nbsp;&nbsp;13:27&nbsp;&nbsp;<label style="border-radius: 5px;background-color:#00F5FF;">游客</label>：想与不想，时刻处于纠结状态<img src="/blog/images/qq/33.gif"><br/>
+﻿2018-08-19&nbsp;&nbsp;<label style="border-radius: 5px;background-color:#00F5FF;">游客</label>：今天天气晴朗<img src="/blog/images/qq/54.gif"><br/>
+2018-08-19&nbsp;&nbsp;<label style="border-radius: 5px;background-color:#00F5FF;">游客</label>：其实吧西红柿是真的难吃，linux是真的好用<img src="/blog/images/qq/20.gif"><br/>
+2018-08-19&nbsp;&nbsp;<label style="border-radius: 5px;background-color:#00F5FF;">游客</label>：时间轴真的好听<img src="/blog/images/qq/41.gif"><br/>
+2018-08-20&nbsp;&nbsp;<label style="border-radius: 5px;background-color:#00F5FF;">游客</label>：想与不想，时刻处于纠结状态<img src="/blog/images/qq/33.gif"><br/>
+2018-08-28&nbsp;&nbsp;<label style="border-radius: 5px;background-color:#00F5FF;">游客</label>：人生总是充满惊喜和失落。有恰当好处的相遇，也有撕心裂肺的怀念。但是时间不会停止，没有一丝可怜，无论是剧终还是待续，都要走下去，希望不负此生。<img src="/blog/images/qq/30.gif"><br/>
+2018-09-10&nbsp;&nbsp;<label style="border-radius: 5px;background-color:#00F5FF;">游客</label>：今天是教师节，发了几条消息给老师，心中莫名产生了一丝悸动，大概是在想念遥远的故事和人吧。<img src="/blog/images/qq/55.gif"><img src="/blog/images/qq/56.gif"><br/>
+2018-09-11&nbsp;&nbsp;<label style="border-radius: 5px;background-color:#00F5FF;">游客</label>：在拥有的时候珍惜就不会害怕失去，若失去了才知道珍惜就不算拥有。<br/>
+2018-09-11&nbsp;&nbsp;<label style="border-radius: 5px;background-color:#00F5FF;">游客</label>：人不能无止境的生活在痛苦中，当失去的东西无法挽回，我们更不能失去自我。<br/>
+2018-09-12&nbsp;&nbsp;<label style="border-radius: 5px;background-color:#00F5FF;">游客</label>：庄子说：相濡以沫，不如相忘于江湖，但是反着说更有道理。<br/>
+2018-09-12&nbsp;&nbsp;<label style="border-radius: 5px;background-color:#00F5FF;">游客</label>：你看到了吗？杜明汉回答说：除了你我什么都没看到。<br/>
