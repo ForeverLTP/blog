@@ -6,7 +6,7 @@
   <link href="/blog/atom.xml" rel="self"/>
   
   <link href="http://www.hwsblog.xyz/blog/"/>
-  <updated>2018-09-04T12:10:54.192Z</updated>
+  <updated>2018-10-07T13:57:27.310Z</updated>
   <id>http://www.hwsblog.xyz/blog/</id>
   
   <author>
@@ -15,6 +15,88 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>特殊符号</title>
+    <link href="http://www.hwsblog.xyz/blog/2018/10/07/%E7%89%B9%E6%AE%8A%E7%AC%A6%E5%8F%B7/"/>
+    <id>http://www.hwsblog.xyz/blog/2018/10/07/特殊符号/</id>
+    <published>2018-10-07T13:56:50.000Z</published>
+    <updated>2018-10-07T13:57:27.310Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote><p>.前几天做公司项目的时候，遇到需要切割字符串，其中就有个特殊符号.使用split切割符号得到的结果全是null值，于是就想到需要进行转义。故记录一些需要转义的特殊符号。</p></blockquote><font style="font-size:20px;">特殊符号：( &nbsp;&nbsp;&nbsp; [ &nbsp;&nbsp;&nbsp;    { &nbsp;&nbsp;&nbsp;} &nbsp;&nbsp;&nbsp; ) &nbsp;&nbsp;&nbsp;?&nbsp;&nbsp;&nbsp;   *&nbsp;&nbsp;&nbsp;+&nbsp;&nbsp;&nbsp; . &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp; ^&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp;&nbsp; $ &nbsp;&nbsp;&nbsp; ¦ &nbsp;&nbsp;&nbsp; </font><br><font style="font-size:20px">使用方法：split(“//.”)</font>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;.前几天做公司项目的时候，遇到需要切割字符串，其中就有个特殊符号.使用split切割符号得到的结果全是null值，
+      
+    
+    </summary>
+    
+    
+      <category term="split" scheme="http://www.hwsblog.xyz/blog/tags/split/"/>
+    
+      <category term="String" scheme="http://www.hwsblog.xyz/blog/tags/String/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Ipv4和Ipv6校验</title>
+    <link href="http://www.hwsblog.xyz/blog/2018/10/07/Ipv4%E5%92%8CIpv6%E6%A0%A1%E9%AA%8C/"/>
+    <id>http://www.hwsblog.xyz/blog/2018/10/07/Ipv4和Ipv6校验/</id>
+    <published>2018-10-07T13:44:10.000Z</published>
+    <updated>2018-10-07T13:56:21.656Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title=" 前言"></a> 前言</h1><blockquote><p>公司项目需要验证ip地址</p></blockquote><pre><code> function isIPv6(ip)//IPV6地址判断 {    return /:/.test(ip) &amp;&amp; str.match(/:/g).length&lt;8 &amp;&amp; /::/.test(ip)          ?(str.match(/::/g).length==1 &amp;&amp; /^::$|^(::)?([\da-f]{1,4}(:|::))*[\da-f]{1,4}(:|::)?$/i.test(str))          :/^([\da-f]{1,4}:){7}[\da-f]{1,4}$/i.test(ip);s} function isIpv4(ip)//IPV4地址判断{  var exp=/^(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])\.(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])\.(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])\.(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])$/;   return ip.match(exp);}</code></pre>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot; 前言&quot;&gt;&lt;/a&gt; 前言&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;公司项目需要验证ip地址&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code&gt; function isI
+      
+    
+    </summary>
+    
+    
+      <category term="Ipv4" scheme="http://www.hwsblog.xyz/blog/tags/Ipv4/"/>
+    
+      <category term="Ipv6" scheme="http://www.hwsblog.xyz/blog/tags/Ipv6/"/>
+    
+      <category term="validate" scheme="http://www.hwsblog.xyz/blog/tags/validate/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>FontAwesome</title>
+    <link href="http://www.hwsblog.xyz/blog/2018/10/07/FontAwesome/"/>
+    <id>http://www.hwsblog.xyz/blog/2018/10/07/FontAwesome/</id>
+    <published>2018-10-07T13:15:09.000Z</published>
+    <updated>2018-10-07T13:55:15.711Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote><font style="font-size:20px;">最近在做项目，然后会需要一些小图标。也尝试去百度然后下载或者p图，一两个还行多了就感觉非常麻烦，就非常苦恼，偶然间发现<b>Font Awesome</b>,感觉非常好用，现在记录一下使用方法。</font></blockquote><h1 id="资源库"><a href="#资源库" class="headerlink" title="资源库"></a>资源库</h1><p><hr><br><a href="http://www.fontawesome.com.cn/get-started/" target="_blank" rel="noopener">Font Awesome中文网</a></p><h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><font style="font-size:20px;"><b>第一步</b>下载资源包（上面是中文网，图标很多很齐全）。如下图将css和fonts放入项目中就ok。</font><br><img src="/blog/2018/10/07/FontAwesome/1.jpg" alt=""><br><br><font style="font-size:20px;"><b>第二步</b>在页面中引用</font><pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;path/to/font-awesome/css/font-awesome.min.css&quot;&gt;</code></pre><font style="font-size:20px;"><b>第三步</b>使用具体图标了，如下图</font><img src="/blog/2018/10/07/FontAwesome/2.jpg" alt=""><br><br><font style="font-size:20px;">点击你想要的小图标，如下图可以查看具体使用情况如下图，</font><p><img src="/blog/2018/10/07/FontAwesome/3.png" alt=""></p><font style="font-size:20px;">Tip:图标的样式通过css可以进行调整，比如想换颜色，就将font-color设置成想要的颜色即可。</font>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;blockquote&gt;
+&lt;font style=&quot;font-size:20px;&quot;&gt;最近在做项目，然后会需要一些小图标。也尝试去百度然后下载或者
+      
+    
+    </summary>
+    
+    
+      <category term="FontAwesome" scheme="http://www.hwsblog.xyz/blog/tags/FontAwesome/"/>
+    
+      <category term="Small icon" scheme="http://www.hwsblog.xyz/blog/tags/Small-icon/"/>
+    
+  </entry>
   
   <entry>
     <title>MybatisGenerator自动构建代码</title>
