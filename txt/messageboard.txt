@@ -1,4 +1,19 @@
-﻿2018-08-19&nbsp;&nbsp;&nbsp;&nbsp;10:45&nbsp;&nbsp;<label style="border-radius: 5px;background-color:#00F5FF;">游客</label>：今天天气晴朗<img src="/blog/images/qq/54.gif"><br/>
-2018-08-19&nbsp;&nbsp;&nbsp;&nbsp;10:46&nbsp;&nbsp;<label style="border-radius: 5px;background-color:#00F5FF;">游客</label>：其实吧西红柿是真的难吃，linux是真的好用<img src="/blog/images/qq/20.gif"><br/>
-2018-08-19&nbsp;&nbsp;&nbsp;&nbsp;10:46&nbsp;&nbsp;<label style="border-radius: 5px;background-color:#00F5FF;">游客</label>：时间轴真的好听<img src="/blog/images/qq/41.gif"><br/>
-2018-08-20&nbsp;&nbsp;&nbsp;&nbsp;13:27&nbsp;&nbsp;<label style="border-radius: 5px;background-color:#00F5FF;">游客</label>：想与不想，时刻处于纠结状态<img src="/blog/images/qq/33.gif"><br/>
+﻿2018-08-19&nbsp;&nbsp;<label style="border-radius: 5px;background-color:#00F5FF;">游客</label>：今天天气晴朗<img src="/blog/images/qq/54.gif"><br/>
+2018-08-19&nbsp;&nbsp;<label style="border-radius: 5px;background-color:#00F5FF;">游客</label>：其实吧西红柿是真的难吃，linux是真的好用<img src="/blog/images/qq/20.gif"><br/>
+2018-08-19&nbsp;&nbsp;<label style="border-radius: 5px;background-color:#00F5FF;">游客</label>：时间轴真的好听<img src="/blog/images/qq/41.gif"><br/>
+2018-08-20&nbsp;&nbsp;<label style="border-radius: 5px;background-color:#00F5FF;">游客</label>：想与不想，时刻处于纠结状态<img src="/blog/images/qq/33.gif"><br/>
+2018-08-28&nbsp;&nbsp;<label style="border-radius: 5px;background-color:#00F5FF;">游客</label>：人生总是充满惊喜和失落。有恰当好处的相遇，也有撕心裂肺的怀念。但是时间不会停止，没有一丝可怜，无论是剧终还是待续，都要走下去，希望不负此生。<img src="/blog/images/qq/30.gif"><br/>
+2018-09-10&nbsp;&nbsp;<label style="border-radius: 5px;background-color:#00F5FF;">游客</label>：今天是教师节，发了几条消息给老师，心中莫名产生了一丝悸动，大概是在想念遥远的故事和人吧。<img src="/blog/images/qq/55.gif"><img src="/blog/images/qq/56.gif"><br/>
+2018-09-11&nbsp;&nbsp;<label style="border-radius: 5px;background-color:#00F5FF;">游客</label>：在拥有的时候珍惜就不会害怕失去，若失去了才知道珍惜就不算拥有。<br/>
+2018-09-11&nbsp;&nbsp;<label style="border-radius: 5px;background-color:#00F5FF;">游客</label>：人不能无止境的生活在痛苦中，当失去的东西无法挽回，我们更不能失去自我。<br/>
+2018-09-12&nbsp;&nbsp;<label style="border-radius: 5px;background-color:#00F5FF;">游客</label>：庄子说：相濡以沫，不如相忘于江湖，但是反着说更有道理。<br/>
+2018-09-12&nbsp;&nbsp;<label style="border-radius: 5px;background-color:#00F5FF;">游客</label>：你看到了吗？杜明汉回答说：除了你我什么都没看到。<br/>
+2018-09-15&nbsp;&nbsp;<label style="border-radius: 5px;background-color:#00F5FF;">游客</label>：有一种爱情叫方文和李米<br/>
+2018-09-15&nbsp;&nbsp;<label style="border-radius: 5px;background-color:#00F5FF;">游客</label>：你拥有全世界，而我的世界只有你<br/>
+2018-09-15&nbsp;&nbsp;<label style="border-radius: 5px;background-color:#00F5FF;">游客</label>：长情是最好的陪伴，即使离开<br/>
+2018-09-17&nbsp;&nbsp;<label style="border-radius: 5px;background-color:#00F5FF;">游客</label>：每天都在尽量给自己找事情做，学画画、学英语、学吉他、学技术、做项目，但还是晚上经常睡不着<br/>
+2018-09-18&nbsp;&nbsp;<label style="border-radius: 5px;background-color:#00F5FF;">游客</label>：今天偶然看到hero的采访，很真实，说实话很打动我，每个字看似平淡却都在讲述一个人背后的心酸<br/>
+2018-09-19&nbsp;&nbsp;<label style="border-radius: 5px;background-color:#00F5FF;">游客</label>：慢慢喜欢上了阅读的感觉，皮囊太空洞，需要用思想来填补，今天开始读撒哈拉的故事<br/>
+2018-09-20&nbsp;&nbsp;<label style="border-radius: 5px;background-color:#00F5FF;">游客</label>：今天该做些什么呢？<br/>
+2018-09-24&nbsp;&nbsp;<label style="border-radius: 5px;background-color:#00F5FF;">游客</label>：清风徐来，明月当空，又是一年花好月，中秋节快乐！<br/>
+2018-10-05&nbsp;&nbsp;<label style="border-radius: 5px;background-color:#00F5FF;">游客</label>：今天睡了一下午感觉挺好的<br/>
