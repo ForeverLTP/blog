@@ -278,7 +278,7 @@ p {
   margin: 0 0 20px 0;
 }
 a {
-  color: #ffb90f;
+  color: black;
   text-decoration: none;
   outline: none;
   border-bottom: 1px solid #999;
@@ -1852,7 +1852,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #522f8f;
+  background: #ff30ff;
 }
 .links-of-blogroll {
   font-size: 13px;
