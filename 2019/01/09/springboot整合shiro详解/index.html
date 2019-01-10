@@ -133,7 +133,7 @@
 <meta property="og:image" content="http://www.hwsblog.xyz/blog/2019/01/09/springboot整合shiro详解/2.jpg">
 <meta property="og:image" content="http://www.hwsblog.xyz/blog/2019/01/09/springboot整合shiro详解/3.png">
 <meta property="og:image" content="http://www.hwsblog.xyz/blog/2019/01/09/springboot整合shiro详解/4.png">
-<meta property="og:updated_time" content="2019-01-09T15:29:53.921Z">
+<meta property="og:updated_time" content="2019-01-10T13:49:22.078Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="springboot整合shiro详解">
 <meta name="twitter:description" content="hljs.initHighlightingOnLoad();   前言  记得在我培训的时候为了防止用户在不登入的状态下访问到其他页面，需要是在jsp中写一个防盗链，始终感觉那样挺麻烦的而且功能还单一，然后就想到使用shiro。    知识概念 一、什么是shiro？ 简单来说shiro是一个开源安全的框架，它可以让我们更加简单方便的处理身份认证、授权、会话管理以及加密等功能。二、sh">
@@ -399,12 +399,24 @@
                 
               
 
-              <time title="创建时间：2019-01-09 22:21:07 / 修改时间：23:29:53" itemprop="dateCreated datePublished" datetime="2019-01-09T22:21:07+08:00">2019-01-09</time>
+              <time title="创建时间：2019-01-09 22:21:07" itemprop="dateCreated datePublished" datetime="2019-01-09T22:21:07+08:00">2019-01-09</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-01-10 21:49:22" itemprop="dateModified" datetime="2019-01-10T21:49:22+08:00">2019-01-10</time>
               
             
           </span>
@@ -473,7 +485,14 @@
 </blockquote>
 <p></p><h2 style="font-size:20px;">知识概念</h2><p></p>
 <p></p><h3 style="font-size:20px;">一、什么是shiro？</h3><p></p>
-<font style="font-size:20px;padding-left:25px;">简单来说shiro是一个开源安全的框架，它可以让我们更加简单方便的处理身份认证、授权、会话管理以及加密等功能。</font><br><h3 style="font-size:20px;">二、shiro能做什么？</h3><br><img src="/blog/2019/01/09/springboot整合shiro详解/1.jpg" alt=""><br><font style="font-size:20px;padding-left:25px;">• <strong>Authentication：</strong>验证用户身份，有点类似防盗链</font><br><font style="font-size:20px;padding-left:25px;">• <strong>Authorization：</strong>给用户赋予权限，不同的用户可以拥有不同的权限，同时根据权限的不同可以限制其访问的范围</font><br><font style="font-size:20px;padding-left:25px;">• <strong>Session Management：</strong>管理用户会话，即使没有web容器或者EJB容器也可以管理</font><br><font style="font-size:20px;padding-left:25px;">• <strong>Cryptography：</strong>数据安全加密</font><br><font style="font-size:20px;padding-left:25px;">• Web Support：拥有一套健全的WebApi支持Web应用程序开发</font><br><font style="font-size:20px;padding-left:25px;">• Caching：shiro支持数据缓存，保证数据访问安全、高效、快速</font><br><font style="font-size:20px;padding-left:25px;">• Concurrency：shiro支持并发多线程应用程序</font><br><font style="font-size:20px;padding-left:25px;">• Testing：shiro支持测试应用程序</font><br><font style="font-size:20px;padding-left:25px;">• Run As：支持用户伪装成另一个用户身份，通常是管理员测试使用</font><br><font style="font-size:20px;padding-left:25px;">• Remember Me：在Session中记住用户身份，Session不失效，就不会要求你重新登入，当Session失效或被强制退出时需要重新登入    </font><br><font style="font-size:20px;padding-left:25px;">• SSO:shiro支持应用程序实现单点登入，即一个账户不能同时在多个地方登入</font><br><h3 style="font-size:20px;">三、shiro架构</h3><br><img src="/blog/2019/01/09/springboot整合shiro详解/2.jpg" alt=""><br><font style="font-size:20px;padding-left:25px;">Shiro架构有3个主要概念：<strong>Subject</strong>、<strong>SecurityManager</strong>、<strong>Realm</strong></font><br><font style="font-size:20px;padding-left:25px;">• <strong>Subject：</strong>相当于用户的意思，但是这里的用户泛指任何事物，不一定是人可以是第三方进程也可以是后台账户等泛指当前正在与软件进行交互的东西，每个Subject都需要与SecurityManager进行绑定，所有Subject统一交由SecurityManager进行管理，访问Subject其实就是访问SecurityManager中特定的subject。</font><br><font style="font-size:20px;padding-left:25px;">• <strong>SecurityManager：</strong>SecurityManager是shiro的核心，对Subject的安全操作进行保护，统一管理所有Subject。</font><br><font style="font-size:20px;padding-left:25px;">• <strong>Realms：</strong>Realm相当于一个特定的安全DAO，充当数据与应用程序交互的桥梁。Realms定义了认证、授权方式，如果默认的Realm不能满足你的需求，可以自定义Realm来满足需求。配置shiro时，至少需要一个Realm用来进行身份验证或授权，SecurityManager可以配置多个Realm，但至少一个是必须的。</font><br><h3 style="font-size:20px;">四、示例</h3><br><font style="font-size:20px;padding-left:25px;">框架：Springboot;<a href="http://shiro.apache.org/tutorial.html" target="_blank" rel="noopener">shiro官方Demo</a></font><br><font style="font-size:20px;padding-left:25px;">通过shiro架构图我们可以清楚的知道流程执行顺序，那么实现shiro的功能就需要逆推原理。</font><br><font style="font-size:20px;padding-left:25px;"><strong>1、自定义的Realm实现</strong></font><br><font style="font-size:20px;padding-left:25px;">如下图shiro定义了很多类或抽象类供我们来实现自定义的Realm,我选用的是继承AuthorizingRealm,因此需要重写它的两个方法doGetAuthorizationInfo和doGetAuthenticationInfo方法。</font><br><img src="/blog/2019/01/09/springboot整合shiro详解/3.png" alt=""><br><br>  <font style="font-size:20px;padding-left:25px;"><strong>UserRealm：</strong></font>  
+<font style="font-size:20px;padding-left:25px;">简单来说shiro是一个开源安全的框架，它可以让我们更加简单方便的处理身份认证、授权、会话管理以及加密等功能。</font><br><h3 style="font-size:20px;">二、shiro能做什么？</h3><br><img src="/blog/2019/01/09/springboot整合shiro详解/1.jpg" alt=""><br><font style="font-size:20px;padding-left:25px;">• <strong>Authentication：</strong>验证用户身份，有点类似防盗链</font><br><font style="font-size:20px;padding-left:25px;">• <strong>Authorization：</strong>给用户赋予权限，不同的用户可以拥有不同的权限，同时根据权限的不同可以限制其访问的范围</font><br><font style="font-size:20px;padding-left:25px;">• <strong>Session Management：</strong>管理用户会话，即使没有web容器或者EJB容器也可以管理</font><br><font style="font-size:20px;padding-left:25px;">• <strong>Cryptography：</strong>数据安全加密</font><br><font style="font-size:20px;padding-left:25px;">• Web Support：拥有一套健全的WebApi支持Web应用程序开发</font><br><font style="font-size:20px;padding-left:25px;">• Caching：shiro支持数据缓存，保证数据访问安全、高效、快速</font><br><font style="font-size:20px;padding-left:25px;">• Concurrency：shiro支持并发多线程应用程序</font><br><font style="font-size:20px;padding-left:25px;">• Testing：shiro支持测试应用程序</font><br><font style="font-size:20px;padding-left:25px;">• Run As：支持用户伪装成另一个用户身份，通常是管理员测试使用</font><br><font style="font-size:20px;padding-left:25px;">• Remember Me：在Session中记住用户身份，Session不失效，就不会要求你重新登入，当Session失效或被强制退出时需要重新登入    </font><br><font style="font-size:20px;padding-left:25px;">• SSO:shiro支持应用程序实现单点登入，即一个账户不能同时在多个地方登入</font><br><h3 style="font-size:20px;">三、shiro架构</h3><br><img src="/blog/2019/01/09/springboot整合shiro详解/2.jpg" alt=""><br><font style="font-size:20px;padding-left:25px;">Shiro架构有3个主要概念：<strong>Subject</strong>、<strong>SecurityManager</strong>、<strong>Realm</strong></font><br><font style="font-size:20px;padding-left:25px;">• <strong>Subject：</strong>相当于用户的意思，但是这里的用户泛指任何事物，不一定是人可以是第三方进程也可以是后台账户等泛指当前正在与软件进行交互的东西，每个Subject都需要与SecurityManager进行绑定，所有Subject统一交由SecurityManager进行管理，访问Subject其实就是访问SecurityManager中特定的subject。</font><br><font style="font-size:20px;padding-left:25px;">• <strong>SecurityManager：</strong>SecurityManager是shiro的核心，对Subject的安全操作进行保护，统一管理所有Subject。</font><br><font style="font-size:20px;padding-left:25px;">• <strong>Realms：</strong>Realm相当于一个特定的安全DAO，充当数据与应用程序交互的桥梁。Realms定义了认证、授权方式，如果默认的Realm不能满足你的需求，可以自定义Realm来满足需求。配置shiro时，至少需要一个Realm用来进行身份验证或授权，SecurityManager可以配置多个Realm，但至少一个是必须的。</font><br><h3 style="font-size:20px;">四、示例</h3><br><font style="font-size:20px;padding-left:25px;">框架：Springboot;<a href="http://shiro.apache.org/tutorial.html" target="_blank" rel="noopener">shiro官方Demo</a></font><br><font style="font-size:20px;padding-left:25px;"><strong>Poom.xml</strong></font> 
+
+<pre><code>&lt;dependency&gt;
+        &lt;groupId&gt;org.apache.shiro&lt;/groupId&gt;
+        &lt;artifactId&gt;shiro-spring&lt;/artifactId&gt;
+        &lt;version&gt;1.4.0&lt;/version&gt;
+&lt;/dependency&gt; 
+</code></pre><font style="font-size:20px;padding-left:25px;">通过shiro架构图我们可以清楚的知道流程执行顺序，那么实现shiro的功能就需要逆推原理。</font><br><font style="font-size:20px;padding-left:25px;"><strong>1、自定义的Realm实现</strong></font><br><font style="font-size:20px;padding-left:25px;">如下图shiro定义了很多类或抽象类供我们来实现自定义的Realm,我选用的是继承AuthorizingRealm,因此需要重写它的两个方法doGetAuthorizationInfo和doGetAuthenticationInfo方法。</font><br><img src="/blog/2019/01/09/springboot整合shiro详解/3.png" alt=""><br><br>  <font style="font-size:20px;padding-left:25px;"><strong>UserRealm：</strong></font>  
 
 <pre><code>public class UserRealm extends AuthorizingRealm{
 
@@ -692,6 +711,10 @@ UsernamePasswordToken token = new UsernamePasswordToken(username,password);
 
           <div class="post-nav-prev post-nav-item">
             
+              <a href="/blog/2019/01/10/SpringBoot整合Quartz/" rel="prev" title="SpringBoot整合Quartz">
+                SpringBoot整合Quartz <i class="fa fa-chevron-right"></i>
+              </a>
+            
           </div>
         </div>
       
@@ -771,7 +794,7 @@ UsernamePasswordToken token = new UsernamePasswordToken(username,password);
                 
                   <a href="/blog/archives/">
                 
-                    <span class="site-state-item-count">10</span>
+                    <span class="site-state-item-count">11</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -857,7 +880,9 @@ UsernamePasswordToken token = new UsernamePasswordToken(username,password);
                     
                       
                     
-                    <span class="site-state-item-count">26</span>
+                      
+                    
+                    <span class="site-state-item-count">27</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>

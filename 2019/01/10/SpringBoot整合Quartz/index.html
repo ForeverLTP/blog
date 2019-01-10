@@ -121,18 +121,21 @@
 
 
 
-  <meta name="description" content="详情请点击这里">
-<meta name="keywords" content="Mybatis,Generator,自动构建代码">
+  <meta name="description" content="hljs.initHighlightingOnLoad();   前言      知识概念 一、什么是Quartz？ Quartz是一个完全由java编写的开源作业调度框架，为在 Java 应用程序中进行作业调度提供了简单却强大的机制。二、Quartz架构Quartz架构有4个核心概念：Job 、JobDetail 、Trigger 、Scheduler  • Job：表示一个工作">
+<meta name="keywords" content="SpringBoot,quartz">
 <meta property="og:type" content="article">
-<meta property="og:title" content="MybatisGenerator自动构建代码">
-<meta property="og:url" content="http://www.hwsblog.xyz/blog/2018/09/04/MybatisGenerator自动构建代码/index.html">
+<meta property="og:title" content="SpringBoot整合Quartz">
+<meta property="og:url" content="http://www.hwsblog.xyz/blog/2019/01/10/SpringBoot整合Quartz/index.html">
 <meta property="og:site_name" content="一只咸鱼">
-<meta property="og:description" content="详情请点击这里">
+<meta property="og:description" content="hljs.initHighlightingOnLoad();   前言      知识概念 一、什么是Quartz？ Quartz是一个完全由java编写的开源作业调度框架，为在 Java 应用程序中进行作业调度提供了简单却强大的机制。二、Quartz架构Quartz架构有4个核心概念：Job 、JobDetail 、Trigger 、Scheduler  • Job：表示一个工作">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-09-04T12:10:54.192Z">
+<meta property="og:image" content="http://www.hwsblog.xyz/blog/2019/01/10/SpringBoot整合Quartz/2.jpg">
+<meta property="og:image" content="http://www.hwsblog.xyz/blog/2019/01/10/SpringBoot整合Quartz/1.png">
+<meta property="og:updated_time" content="2019-01-10T14:02:49.565Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="MybatisGenerator自动构建代码">
-<meta name="twitter:description" content="详情请点击这里">
+<meta name="twitter:title" content="SpringBoot整合Quartz">
+<meta name="twitter:description" content="hljs.initHighlightingOnLoad();   前言      知识概念 一、什么是Quartz？ Quartz是一个完全由java编写的开源作业调度框架，为在 Java 应用程序中进行作业调度提供了简单却强大的机制。二、Quartz架构Quartz架构有4个核心概念：Job 、JobDetail 、Trigger 、Scheduler  • Job：表示一个工作">
+<meta name="twitter:image" content="http://www.hwsblog.xyz/blog/2019/01/10/SpringBoot整合Quartz/2.jpg">
 
 
 
@@ -141,7 +144,7 @@
 
 
 
-  <link rel="canonical" href="http://www.hwsblog.xyz/blog/2018/09/04/MybatisGenerator自动构建代码/"/>
+  <link rel="canonical" href="http://www.hwsblog.xyz/blog/2019/01/10/SpringBoot整合Quartz/"/>
 
 
 
@@ -151,7 +154,7 @@
   };
 </script>
 
-  <title>MybatisGenerator自动构建代码 | 一只咸鱼</title>
+  <title>SpringBoot整合Quartz | 一只咸鱼</title>
   
 
 
@@ -352,7 +355,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://www.hwsblog.xyz/blog/blog/2018/09/04/MybatisGenerator自动构建代码/">
+    <link itemprop="mainEntityOfPage" href="http://www.hwsblog.xyz/blog/blog/2019/01/10/SpringBoot整合Quartz/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="一只咸鱼">
@@ -369,7 +372,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">MybatisGenerator自动构建代码
+          <h2 class="post-title" itemprop="name headline">SpringBoot整合Quartz
               
             
           </h2>
@@ -394,7 +397,7 @@
                 
               
 
-              <time title="创建时间：2018-09-04 19:50:23 / 修改时间：20:10:54" itemprop="dateCreated datePublished" datetime="2018-09-04T19:50:23+08:00">2018-09-04</time>
+              <time title="创建时间：2019-01-10 21:45:31 / 修改时间：22:02:49" itemprop="dateCreated datePublished" datetime="2019-01-10T21:45:31+08:00">2019-01-10</time>
             
 
             
@@ -404,24 +407,6 @@
             
           </span>
 
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/blog/categories/轮子/" itemprop="url" rel="index"><span itemprop="name">轮子</span></a></span>
-
-                
-                
-              
-            </span>
           
 
           
@@ -458,7 +443,170 @@
       
 
       
-        <p><a href="https://github.com/ForeverLTP/MybatisGeneration" target="_blank" rel="noopener">详情请点击这里</a></p>
+        <p><img src="/blog/2019/01/10/SpringBoot整合Quartz/2.jpg" alt=""> </p>
+<p><link href="http://cdn.bootcss.com/highlight.js/8.0/styles/monokai_sublime.min.css" rel="stylesheet">  </p>
+<script src="http://cdn.bootcss.com/highlight.js/8.0/highlight.min.js"></script>  
+<script>hljs.initHighlightingOnLoad();</script> 
+
+<p></p><h2 style="font-size:20px;">前言</h2><p></p>
+<blockquote>
+<font style="font-size:20px;"></font>  
+</blockquote>
+<p></p><h2 style="font-size:20px;">知识概念</h2><p></p>
+<p></p><h3 style="font-size:20px;">一、什么是Quartz？</h3><p></p>
+<font style="font-size:20px;padding-left:25px;">Quartz是一个完全由java编写的开源<strong>作业调度</strong>框架，为在 Java 应用程序中进行作业调度提供了简单却强大的机制。</font><br><h3 style="font-size:20px;">二、Quartz架构</h3><br><font style="font-size:20px;padding-left:25px;">Quartz架构有4个核心概念：<strong>Job </strong>、<strong>JobDetail </strong>、<strong>Trigger </strong>、<strong>Scheduler  </strong></font><br><font style="font-size:20px;padding-left:25px;">• <strong>Job：</strong>表示一个工作或任务，包含具体执行的内容。</font><br><font style="font-size:20px;padding-left:25px;">• <strong>JobDetail：</strong>表示一个具体的可执行的调度程序，Job 是这个可执行程调度程序所要执行的内容，另外 JobDetail 还包含了这个任务调度的方案和策略。</font><br><font style="font-size:20px;padding-left:25px;">• <strong>Trigger：</strong>表示触发器，包含可执行调度程序的时间参数配置，是可执行调度程序的时间执行策略</font><br><font style="font-size:20px;padding-left:25px;">• <strong>Scheduler：</strong>代表一个调度容器，一个调度容器中可以注册多个JobDetail和Trigger，当JobDetail和Trigger组合，就可以被调度容器调度了</font><br><h3 style="font-size:20px;">三、示例</h3><br><font style="font-size:20px;padding-left:25px;">框架：Springboot;&nbsp;&nbsp;<a href="http://www.quartz-scheduler.org/documentation/quartz-2.2.x/quick-start.html" target="_blank" rel="noopener">(quartz官方Demo)</a></font><br><font style="font-size:20px;padding-left:25px;"><strong>Pom.xml</strong></font>
+
+<pre><code>&lt;dependency&gt;
+    &lt;groupId&gt;org.quartz-scheduler&lt;/groupId&gt;
+    &lt;artifactId&gt;quartz&lt;/artifactId&gt;
+&lt;/dependency&gt;
+</code></pre><div style="font-size:20px;padding-left:25px;"><strong>quartz.properties</strong></div>  
+
+<pre><code>//Quartz
+//线程调度器实例名
+org.quartz.scheduler.instanceName = quartzScheduler
+//如何存储任务和触发器等信息
+org.quartz.jobStore.class = org.quartz.impl.jdbcjobstore.JobStoreTX
+//驱动代理
+org.quartz.jobStore.driverDelegateClass = org.quartz.impl.jdbcjobstore.StdJDBCDelegate
+//表前缀
+org.quartz.jobStore.tablePrefix = qrtz_ 
+//数据源  must
+org.quartz.jobStore.dataSource = quartzDataSource
+//是否集群
+org.quartz.jobStore.isClustered = false
+
+org.quartz.dataSource.quartzDataSource.connectionProvider.class=com.alibaba.druid.support.quartz.DruidQuartzConnectionProvider
+org.quartz.dataSource.quartzDataSource.driverClassName =com.mysql.jdbc.Driver
+org.quartz.dataSource.quartzDataSource.Url=jdbc:mysql://localhost:3306/quartz?serverTimezone=UTC&amp;useUnicode=true&amp;characterEncoding=utf8
+org.quartz.dataSource.quartzDataSource.username=root
+org.quartz.dataSource.quartzDataSource.password=root
+org.quartz.dataSource.quartzDataSource.validationQuery=SELECT 1 FROM DUAL 
+//线程池的线程数    must&gt;0 
+org.quartz.threadPool.threadCount = 3
+</code></pre><p><img src="/blog/2019/01/10/SpringBoot整合Quartz/1.png" alt="">  </p>
+<font style="font-size:20px;padding-left:25px;"><strong>1、Job </strong></font>   
+
+<pre><code>public class BarrageJob implements Job{
+
+    private static Logger logger = Logger.getLogger(BarrageJob.class);
+
+    @Autowired
+    BarrageService barrageService;
+    @Autowired
+    QuartzService quartzService;
+
+    //任务的具体执行内容
+    @Override
+    public void execute(JobExecutionContext context)
+            throws JobExecutionException {
+        logger.info(&quot;BarrageJob开始执行&quot;);
+        Date date = new Date();
+        Timestamp time = new Timestamp(date.getTime());
+        Integer count = barrageService.getBarrageCount(time);
+        quartzService.insertJobData(new QrtzJobData(-1,context.getJobDetail().getKey().getName(),time,String.valueOf(count),BarrageJob.class.getName()));
+        logger.info(&quot;BarrageJob执行完毕&quot;);
+    }
+}
+</code></pre><div style="font-size:20px;padding-left:25px;"><strong>注意：</strong>BarrageJob中的注解正常情况下是无效的，因为它没有被Spring容器管理，因此需要在下面手动注入到容器中。</div>  
+
+<font style="font-size:20px;padding-left:25px;"><strong>2、JobDetail</strong></font>  
+
+<pre><code>JobDetail myjob = JobBuilder.newJob(BarrageJob.class).withIdentity(jobName, jobGroupName).build();
+</code></pre><font style="font-size:20px;padding-left:25px;"><strong>3、Trigger</strong></font>  
+
+<pre><code>Quartz提供了多个Trigger供我们选择(详情请查看相关源码)，可以选择其一例如：CronTrigger
+CronTrigger trigger = TriggerBuilder.newTrigger().
+            withSchedule(CronScheduleBuilder.cronSchedule(Cron表达式).withIdentity(triggerName, triggerGroup).startAt(开始时间).endAt(结束时间).build();
+Cron表达式规则可以自行百度
+</code></pre><font style="font-size:20px;padding-left:25px;"><strong>4、Scheduler</strong></font>     
+
+<div style="font-size:20px;padding-left:25px;"><strong>ScheduleConfig：</strong></div>  
+
+<pre><code>@Configuration
+public class ScheduleConfig {
+    //添加工作监听如不需要可注释    
+    @Autowired
+    MyJobListener myJobListener;
+    //注册此工厂是为了使得在任务或工作即Job中也能使用Spring注解
+    @Autowired
+    MyJobFactory myJobFactory;
+    @Bean
+    public SchedulerFactoryBean getSchedulerFactoryBean(){
+        SchedulerFactoryBean factory = new SchedulerFactoryBean();
+        factory.setJobFactory(myJobFactory);
+        Properties quartzProperties = ReadResourceUtils.getProperties(&quot;quartz.properties&quot;);
+        //可以选择不加载自定义的properties文件，系统会加载默认的配置文件
+        if(null != quartzProperties)factory.setQuartzProperties(quartzProperties);
+        return factory;
+    }
+    @Bean(name=&quot;myScheduler&quot;)
+    public  Scheduler getScheduler() throws SchedulerException{
+        //SchedulerFactory schedulerFactory = new StdSchedulerFactory();
+        Scheduler scheduler = getSchedulerFactoryBean().getScheduler();
+        scheduler.getListenerManager().addJobListener(myJobListener);
+        return scheduler;
+    }
+
+}
+</code></pre><div style="font-size:20px;padding-left:25px;"><strong>MyJobFactory：</strong></div>  
+
+<pre><code>@Component
+public class MyJobFactory extends AdaptableJobFactory{
+    @Autowired
+    private AutowireCapableBeanFactory factory;
+    @Override
+    protected Object createJobInstance(TriggerFiredBundle bundle) throws Exception {
+        // 调用父类的方法
+        Object jobInstance = super.createJobInstance(bundle);
+        // 进行注入
+        factory.autowireBean(jobInstance);
+        return jobInstance;
+    }
+}
+</code></pre><div style="font-size:20px;padding-left:25px;"><strong>MyJobListener：</strong></div> 
+
+<pre><code>@Component
+public class MyJobListener implements JobListener {
+
+    @Override
+    public String getName() {
+        return &quot;myJobListener&quot;;
+    }
+    @Autowired
+    QuartzService quartzService;
+    @Override
+    public void jobToBeExecuted(JobExecutionContext context) {
+        System.out.println(&quot;start:jobToBeExecuted&quot;);
+        String jobName = context.getJobDetail().getKey().getName();
+        System.out.println(&quot;end:jobToBeExecuted&quot;);
+    }
+
+    @Override
+    public void jobExecutionVetoed(JobExecutionContext context) {
+
+    }
+    /**任务执行后更新任务状态*/
+    @Override
+    public void jobWasExecuted(JobExecutionContext context,
+            JobExecutionException jobException) {
+        System.out.println(&quot;start:jobWasExecuted&quot;);
+        String jobName = context.getJobDetail().getKey().getName();
+        System.out.println(&quot;end:jobWasExecuted&quot;);
+    }
+
+}
+</code></pre><font style="font-size:20px;padding-left:25px;"><strong>5、绑定JobDetail和CronTrigger到scheduler容器中</strong></font> 
+
+<pre><code>因为上面scheduler配置的时候已经将scheduler交给Spring容器进行管理了此时只需要自动注入
+就可以获得scheduler容器
+//将JobDetail和CronTrigger绑定到scheduler容器中
+scheduler.scheduleJob(JobDetail, CronTrigger);
+//调度任务
+scheduler.start();
+</code></pre><p></p><h3 style="font-size:20px;">三、总结</h3> <p></p>
+<font style="font-size:20px;padding-left:25px;">使用Quartz首先要理解它的4大核心概念，接着理清楚它的流程就可以很快掌握</font>
+
 
       
     </div>
@@ -479,11 +627,9 @@
       
         <div class="post-tags">
           
-            <a href="/blog/tags/Mybatis/" rel="tag"><i class="fa fa-tag"></i> Mybatis</a>
+            <a href="/blog/tags/SpringBoot/" rel="tag"><i class="fa fa-tag"></i> SpringBoot</a>
           
-            <a href="/blog/tags/Generator/" rel="tag"><i class="fa fa-tag"></i> Generator</a>
-          
-            <a href="/blog/tags/自动构建代码/" rel="tag"><i class="fa fa-tag"></i> 自动构建代码</a>
+            <a href="/blog/tags/quartz/" rel="tag"><i class="fa fa-tag"></i> quartz</a>
           
         </div>
       
@@ -496,8 +642,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/blog/2018/08/23/对git仓库的理解/" rel="next" title="对git仓库的理解">
-                <i class="fa fa-chevron-left"></i> 对git仓库的理解
+              <a href="/blog/2019/01/09/springboot整合shiro详解/" rel="next" title="springboot整合shiro详解">
+                <i class="fa fa-chevron-left"></i> springboot整合shiro详解
               </a>
             
           </div>
@@ -505,10 +651,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/blog/2018/10/07/FontAwesome/" rel="prev" title="FontAwesome">
-                FontAwesome <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -560,8 +702,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -737,6 +888,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">2.</span> <span class="nav-text">知识概念</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">2.1.</span> <span class="nav-text">一、什么是Quartz？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">2.2.</span> <span class="nav-text">二、Quartz架构</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">2.3.</span> <span class="nav-text">三、示例</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">2.4.</span> <span class="nav-text">三、总结</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
