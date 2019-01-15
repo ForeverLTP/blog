@@ -129,8 +129,8 @@
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://www.hwsblog.xyz/blog/2018/11/05/类加载的过程/bg.jpg">
 <meta property="og:image" content="http://www.hwsblog.xyz/blog/2018/11/05/类加载的过程/1.jpg">
-<meta property="og:image" content="http://www.hwsblog.xyz/blog/2018/11/05/类加载的过程/2.jpg">
-<meta property="og:updated_time" content="2019-01-12T05:07:48.623Z">
+<meta property="og:image" content="http://www.hwsblog.xyz/blog/2018/11/05/类加载的过程/2.png">
+<meta property="og:updated_time" content="2019-01-15T11:49:19.149Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="类加载的过程">
 <meta name="twitter:image" content="http://www.hwsblog.xyz/blog/2018/11/05/类加载的过程/bg.jpg">
@@ -412,7 +412,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-01-12 13:07:48" itemprop="dateModified" datetime="2019-01-12T13:07:48+08:00">2019-01-12</time>
+                <time title="修改时间：2019-01-15 19:49:19" itemprop="dateModified" datetime="2019-01-15T19:49:19+08:00">2019-01-15</time>
               
             
           </span>
@@ -478,9 +478,9 @@
 </blockquote>
 <p></p><h2 style="font-size:20px;">知识概念</h2><br><img src="/blog/2018/11/05/类加载的过程/1.jpg" alt=""><p></p>
 <blockquote>
-<p>加载：简单来说就是通过类的全限定名称获取数据并在堆中创建一个对象作为数据访问入口<br><br>验证：检验Class文件数据信息是否符合虚拟机的要求<br><br>准备：此阶段是对类变量进行分配内存和初始化（<font color="red">注意：此处初始化是给系统默认值(一般情况)，真正的赋值在上图中的初始化阶段。<font color="blue">特殊情况:被final修饰的类变量如public static final int test = 1;此时就直接赋值为1了</font>。</font>）<br><br>解析：对字段、方法、接口进行解析，这个交给虚拟机来完成，不必过多深究。<br><br>初始化：真正开始执行java中的程序代码，例如：对类变量进行初始化，执行静态代码块等<br></p>
+<p>加载：简单来说就是通过类的全限定名称获取数据并在堆中创建一个对象作为数据访问入口<br><br>验证：检验Class文件数据信息是否符合虚拟机的要求<br><br>准备：此阶段是对类变量进行分配内存和初始化（<font color="red">注意：此处初始化是给系统默认值即零值(一般情况)，真正的赋值在上图中的初始化阶段。<font color="blue">特殊情况:被final修饰的类变量如public static final int test = 1;此时就直接赋值为1了</font>。</font>）<br><br>解析：对字段、方法、接口进行解析，这个交给虚拟机来完成，不必过多深究。<br><br>初始化：真正开始执行java中的程序代码，例如：对类变量进行初始化，执行静态代码块等<br></p>
 </blockquote>
-<font color="red">注意：</font>上图5个过程除了解析过程其他过程都是要按照图中顺序开始，（<font color="red">注意：这里的顺序不是一定要等前面一个过程完成后才开始下一个过程</font>），解析过程可以在加载的时候也可以在初始化的时候，这个交给虚拟机来判断。<br><br><h2 style="font-size:20px;">初始化时机</h2><br><font style="font-size:20px;padding-left:25px;">1、new实例化对象的时候（<font color="red">注：类未被加载过</font>）。</font> <br><br><font style="font-size:20px;padding-left:25px;">2、引用静态变量</font><br><br><font style="font-size:20px;padding-left:25px;">3、引用静态方法<br><br><font style="font-size:20px;padding-left:25px;">4、使用反射<br><br><font style="font-size:20px;padding-left:25px;">5、初始化当前类的父类（如果存在）未被加载过<br><br><font style="font-size:20px;padding-left:25px;">6、主类（main方法）<br><br><h2 style="font-size:20px;">附加：实例对象加载过程</h2><br><img src="/blog/2018/11/05/类加载的过程/2.jpg" alt=""><br><font style="font-size:20px;padding-left:25px;">从面两个过程图我们可以清楚的知道为什么成员变量可以不用赋初值(<font color="red">因为加载过程中会先赋一遍系统默认值然后再按照程序代码初始化一次</font>),而局部变量需要赋初值。</font>
+<font color="red">注意：</font>上图5个过程除了解析过程其他过程都是要按照图中顺序开始，（<font color="red">注意：这里的顺序不是一定要等前面一个过程完成后才开始下一个过程</font>），解析过程可以在加载的时候也可以在初始化的时候，这个交给虚拟机来判断。<br><br><h2 style="font-size:20px;">初始化时机</h2><br><font style="font-size:20px;padding-left:25px;">1、new实例化对象的时候（<font color="red">注：类未被加载过</font>）。</font> <br><br><font style="font-size:20px;padding-left:25px;">2、引用静态变量</font><br><br><font style="font-size:20px;padding-left:25px;">3、引用静态方法<br><br><font style="font-size:20px;padding-left:25px;">4、使用反射<br><br><font style="font-size:20px;padding-left:25px;">5、初始化当前类的父类（如果存在）未被加载过<br><br><font style="font-size:20px;padding-left:25px;">6、主类（main方法）<br><br><h2 style="font-size:20px;">附加：实例对象加载过程</h2><br><img src="/blog/2018/11/05/类加载的过程/2.png" alt=""><br><font style="font-size:20px;padding-left:25px;">从面两个过程图我们可以清楚的知道为什么成员变量和类变量可以不用赋初值(<font color="red">类变量会在准备阶段赋值零值，成员变量会在调用构造函数的时候初始化</font>),而局部变量需要赋初值。</font>
 
 </font></font></font></font>
       
