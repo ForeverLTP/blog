@@ -17,3 +17,5 @@
 2018-09-20&nbsp;&nbsp;<label style="border-radius: 5px;background-color:#00F5FF;">游客</label>：今天该做些什么呢？<br/>
 2018-09-24&nbsp;&nbsp;<label style="border-radius: 5px;background-color:#00F5FF;">游客</label>：清风徐来，明月当空，又是一年花好月，中秋节快乐！<br/>
 2018-10-05&nbsp;&nbsp;<label style="border-radius: 5px;background-color:#00F5FF;">游客</label>：今天睡了一下午感觉挺好的<br/>
+2019-04-24&nbsp;&nbsp;<label style="border-radius: 5px;background-color:#00F5FF;">游客</label>：喜欢是一种习惯，我不曾忘记<br/>
+2019-04-25&nbsp;&nbsp;<label style="border-radius: 5px;background-color:#00F5FF;">游客</label>：最单纯的喜欢就是就算你拒绝了我，我对你也永远没有埋怨。但我不会再靠近了。如果你有求于我，我依然会鞠躬尽瘁。从今往后我会把喜欢藏起来，不再招摇过市了，我会努力过得好，希望你也是<br/>

@@ -285,7 +285,7 @@ a {
   word-wrap: break-word;
 }
 a:hover {
-  color: #87daff;
+  color: #ffb90f;
   border-bottom-color: #87daff;
 }
 blockquote {
@@ -1852,7 +1852,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ffe416;
+  background: #0a71ff;
 }
 .links-of-blogroll {
   font-size: 13px;

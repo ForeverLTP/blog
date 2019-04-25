@@ -1,20 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>一只咸鱼</title>
+  <title>一只有梦想的咸鱼</title>
   
   
   <link href="/blog/atom.xml" rel="self"/>
   
   <link href="http://www.hwsblog.xyz/blog/"/>
-  <updated>2019-01-16T12:01:22.380Z</updated>
+  <updated>2019-04-25T14:49:20.429Z</updated>
   <id>http://www.hwsblog.xyz/blog/</id>
   
   <author>
-    <name>一只咸鱼</name>
+    <name>一只有梦想的咸鱼</name>
     
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>搭建eureka高可用注册中心</title>
+    <link href="http://www.hwsblog.xyz/blog/2019/04/25/%E6%90%AD%E5%BB%BAeureka%E9%AB%98%E5%8F%AF%E7%94%A8%E6%B3%A8%E5%86%8C%E4%B8%AD%E5%BF%83/"/>
+    <id>http://www.hwsblog.xyz/blog/2019/04/25/搭建eureka高可用注册中心/</id>
+    <published>2019-04-25T14:48:09.000Z</published>
+    <updated>2019-04-25T14:49:20.429Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/blog/2019/04/25/搭建eureka高可用注册中心/bg.jpg" alt=""><br><a id="more"></a></p><p><link href="http://cdn.bootcss.com/highlight.js/8.0/styles/monokai_sublime.min.css" rel="stylesheet">  </p><p><script src="http://cdn.bootcss.com/highlight.js/8.0/highlight.min.js"></script>  </p><p><script>hljs.initHighlightingOnLoad();</script> </p><p><link href="http://cdn.bootcss.com/highlight.js/8.0/styles/monokai_sublime.min.css" rel="stylesheet">  </p><p><script src="http://cdn.bootcss.com/highlight.js/8.0/highlight.min.js"></script>  </p><p><script>hljs.initHighlightingOnLoad();</script> </p><h2 style="font-size:20px;">前言</h2>  <blockquote><font style="font-size:20px;">搭建高可用的eureka注册中心花费了较长的时间，踩了很多坑，因此觉得有必要写一写。</font></blockquote><h2 style="font-size:20px;">概念</h2><br><font style="font-size:20px;">&nbsp;&nbsp;&nbsp;&nbsp;高可用的注册中心是指开启多个注册中心，这些注册中心彼此之间相互注册。这样可以防止当某一个注册中心挂掉了服务还是可以在其他的注册中心继续注册。</font><br><br><h2 style="font-size:20px;">1、pom.xml</h2>  <pre><code>&lt;dependencies&gt;    &lt;!--添加web支持 --&gt;    &lt;dependency&gt;           &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;           &lt;artifactId&gt;spring-boot-starter-web&lt;/artifactId&gt;    &lt;/dependency&gt;    &lt;!-- 可有可无 --&gt;    &lt;dependency&gt;        &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;        &lt;artifactId&gt;spring-boot-starter-test&lt;/artifactId&gt;        &lt;scope&gt;test&lt;/scope&gt;    &lt;/dependency&gt;    &lt;!--添加eureka服务器支持 --&gt;    &lt;dependency&gt;        &lt;groupId&gt;org.springframework.cloud&lt;/groupId&gt;        &lt;artifactId&gt;spring-cloud-starter-netflix-eureka-server&lt;/artifactId&gt;    &lt;/dependency&gt;&lt;/dependencies&gt;&lt;!--springcloud由很多独立项目集成的，每个项目都有自己独立的版本号因此需要指明 --&gt;&lt;dependencyManagement&gt;    &lt;dependencies&gt;        &lt;dependency&gt;        &lt;groupId&gt;org.springframework.cloud&lt;/groupId&gt;        &lt;artifactId&gt;spring-cloud-dependencies&lt;/artifactId&gt;        &lt;version&gt;Finchley.RELEASE&lt;/version&gt;        &lt;type&gt;pom&lt;/type&gt;        &lt;scope&gt;import&lt;/scope&gt;    &lt;/dependency&gt;    &lt;/dependencies&gt;&lt;/dependencyManagement&gt;</code></pre><font style="font-size:20px;">2、创建application-peer1.yml作为peer1的服务注册中心的配置文件</font>  <pre><code>application-peer1.yml #注意文件名是-不是.server:  port: 9091spring:  profiles: peer1  application:    name: eurekaServereureka:  instance:    hostname: peer1 #此处名称对应文件名称  client:    register-with-eureka: true #高可用注册中心需要将自己作为客户端注册    fetch-registry: true  #刷新开启    serviceUrl:      defaultZone: http://peer2:9092/eureka/  #peer2注册路径</code></pre><font style="font-size:20px;">3、创建application-peer2.yml作为peer2的服务注册中心的配置文件</font>  <pre><code>application-peer2.yml #注意文件名是-不是.server:  port: 9092spring:  profiles: peer2  application:    name: eurekaServereureka:  instance:    hostname: peer2 #此处名称对应文件名称  client:    register-with-eureka: true #高可用注册中心需要将自己作为客户端注册    fetch-registry: true  #刷新开启    serviceUrl:      defaultZone: http://peer1:9091/eureka/  #peer1注册路径</code></pre><font style="font-size:18px;">&nbsp;&nbsp;&nbsp;&nbsp;注意：yml格式和properties格式的区别，yml格式读取会按照文件中顺序读取。yml有格式要求:1、叶子节点冒号后空一格2、子节点与父节点空两格不是一个tab</font><br><font style="font-size:20px;">4、让peer1和peer2 hostname生效</font><pre><code>windows:    C:\Windows\System32\drivers\etc\hosts #需要获取管理权限才能修改hosts文件    127.0.0.1 peerl    127.0.0.1 peer2Centos:    /etc/hosts    127.0.0.1 peerl    127.0.0.1 peer2设置完成后：ping peer1和peer2如果能够ping通即配置成功</code></pre><font style="font-size:20px;">5、在启动类中添加服务中心注解</font>  <pre><code>@EnableEurekaServer@SpringBootApplicationpublic class ServercenterApplication {    public static void main(String[] args) {        SpringApplication.run(ServercenterApplication.class, args);    }}</code></pre><font style="font-size:20px;">6、启动</font>  <pre><code>打包后：java -jar servercenter-0.0.1-SNAPSHOT.jar --spring.profiles.active=peer1&amp;java -jar servercenter-0.0.1-SNAPSHOT.jar --spring.profiles.active=peer2未打包：    启动时在program arguments添加参数--spring.profiles.active=peer1</code></pre><font style="font-size:20px;">7、总结</font><br><font style="font-size:20px;">&nbsp;&nbsp;&nbsp;&nbsp;注意细节，越简单的东西往往越容易疏忽。</font> ]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;/blog/2019/04/25/搭建eureka高可用注册中心/bg.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="springcloud" scheme="http://www.hwsblog.xyz/blog/categories/springcloud/"/>
+    
+    
+      <category term="eureka" scheme="http://www.hwsblog.xyz/blog/tags/eureka/"/>
+    
+      <category term="高可用" scheme="http://www.hwsblog.xyz/blog/tags/%E9%AB%98%E5%8F%AF%E7%94%A8/"/>
+    
+      <category term="注册中心" scheme="http://www.hwsblog.xyz/blog/tags/%E6%B3%A8%E5%86%8C%E4%B8%AD%E5%BF%83/"/>
+    
+      <category term="springcloud" scheme="http://www.hwsblog.xyz/blog/tags/springcloud/"/>
+    
+  </entry>
   
   <entry>
     <title>Springboot整合thymeleaf实现国际化</title>
